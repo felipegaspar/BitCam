@@ -6,7 +6,7 @@ Este projeto está sendo desenvolvido para mostrar os problemas relacionados a p
 Como Funciona?
 ---------------------------------------
 
-É informado uma coodernada e o projeto efetua a comunicação com a API do Instagram para capturar pontos próximos e fotos que foram tiradas.
+É informado uma coordernada e o projeto efetua a comunicação com a API do Instagram para capturar pontos próximos e fotos que foram tiradas.
 
 Está pronto?
 -----------------------------------------
