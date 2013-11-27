@@ -3,6 +3,8 @@ Projeto BitCam
 
 Este projeto está sendo desenvolvido para mostrar os problemas relacionados a privacidade que as pessoas enfrentam ao liberar muita informação utilizando o local em que elas se encontram.
 
+![Funcionamento](http://fesoft.net/bitcam/ex.png)
+
 Como Funciona?
 ---------------------------------------
 
