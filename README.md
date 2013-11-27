@@ -8,19 +8,39 @@ Este projeto está sendo desenvolvido para mostrar os problemas relacionados a p
 Como Funciona?
 ---------------------------------------
 
-É informado uma coordernada e o projeto efetua a comunicação com a API do Instagram para capturar pontos próximos e fotos que foram tiradas.
+Inicialmente é necessário informar uma coordenada *(latitude/longitude)*,utilizando a API do [Instagram] (http://instagram.com/developer/) é possível capturar todos os locais que as pessoas já adicionaram utilizando o FourSquare,após a captura desses locais é possível listar as imagens e videos que foram postados no instagram a partir daquele local.
 
-Está pronto?
+Como Instalar
 -----------------------------------------
 
-Não,ainda falta muita atualização. Até agora,tudo que fiz foi a comunicação com a API do instagram e a captura de dados do local,meu objetivo é melhorar o código e principalmente a parte de getToken().
+Antes de tudo é necessário que você tenha uma conta no instagram; depois é necessário que seja criado um Client,caso você não tenha a menor ideia da onde encontrar isso [clique Aqui e seja redirecionado.] (http://instagram.com/developer/clients/register/)
 
-O que vem pela frente?
+Com o Cliente criado é necessário configurar nosso projeto com as informações que você recebeu,estas informações serão editadas no arquivo Load.php
+
+<pre>
+$GLOBALS["config"] = array(
+	'client_id' => '',
+	'client_secret' => '',
+	'redirect_uri' => '',
+	'token' => ''
+);
+</pre>
+
+<dl>
+  <dt>Porque tem o parâmetro token?</dt>
+  <dd>O token é o código recebido após a autenticação. Caso você já tenha esse token guardado e não queira ficar autenticando sempre,basta colocar e utilizar a aplicação sem problemas. Ou deixe sem valor que você terá que autenticar sempre que a Sessão da aplicação expirar. *(Caso você deixe com algum token armazenado, lembre-se que o token pode expirar depois de um tempo)*</dd>
+</dl>
+
+Próximas Atualizações
 -----------------------------------------
 
-Meu objetivo é integrar não apenas o Instagram,mas também o Twitter. Ao fornecer uma coordernada eu quero capturar todo o conteúdo social daquele local,e o mais importante,o conteúdo que está sendo postado naquele instante.
+* Efetuar algumas alterações na classe Core.
+* Exibir todas as imagens e videos próximas do local sem a necessidade de clicar num ponto.
+* Incluir a API do twitter e capturar todos os tweets próximos do local.
+* Filtrar o contéudo por um tempo determinado.
+* Adicionar uma interface agradável utilizando BootStrap.
 
-Como posso ajudar?
---------------------------------------
+Licença
+-----------------------------------------
 
-Qualquer um pode ajudar,desde que entendam o escopo do projeto. ;D
+Você pode copiar,utilizar e fazer o que bem desejar desde que tenha em mente que este é um projeto e assim deverá ser. ;D
