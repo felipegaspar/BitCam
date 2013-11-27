@@ -16,9 +16,11 @@ class Instagram {
 			$url = 'https://api.instagram.com/v1/users/self/?access_token='.$this->_token;
 			$curl = Curl::getInstance()->set($url);
 			if(!$curl->getError()) {
-				return $curl->getResult()["data"]["username"];
+				$info = $curl->getResult();
+			} else {
+				die('Erro '.$curl->getErrorCode());
 			}
-
+			return $info["data"]["username"];
 		}
 
 		public function getLocation($cood = array()) {
@@ -27,6 +29,8 @@ class Instagram {
 			$curl = Curl::getInstance()->set($url);
 			if(!$curl->getError()) {
 				$arr = $curl->getResult();
+			} else {
+				die('Erro '.$curl->getErrorCode());
 			}
 			$lugares = array();
 			for($k=0;$k<count($arr["data"]);$k++){
@@ -41,6 +45,8 @@ class Instagram {
 			$curl = Curl::getInstance()->set($url);
 			if(!$curl->getError()) {
 				$local = $curl->getResult();
+			} else {
+				die('Erro '.$curl->getErrorCode());
 			}
 			$info = array();
 			for($k=0;$k<count($local["data"]);$k++){
