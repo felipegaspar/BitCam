@@ -28,7 +28,7 @@ $GLOBALS["config"] = array(
 
 <dl>
   <dt>Porque tem o parâmetro token?</dt>
-  <dd>O token é o código recebido após a autenticação. Caso você já tenha esse token guardado e não queira ficar autenticando sempre,basta colocar e utilizar a aplicação sem problemas. Ou deixe sem valor que você terá que autenticar sempre que a Sessão da aplicação expirar. *(Caso você deixe com algum token armazenado, lembre-se que o token pode expirar depois de um tempo)*</dd>
+  <dd>O token é o código recebido após a autenticação. Caso você já tenha esse token guardado e não queira ficar autenticando sempre,basta colocar e utilizar a aplicação sem problemas. Ou deixe sem valor que você terá que autenticar sempre que a Sessão da aplicação expirar. *(Caso você deixe com algum token armazenado, lembre-se que o token pode expirar depois de um tempo)* </dd>
 </dl>
 
 Próximas Atualizações
@@ -43,4 +43,4 @@ Próximas Atualizações
 Licença
 -----------------------------------------
 
-Você pode copiar,utilizar e fazer o que bem desejar desde que tenha em mente que este é um projeto e assim deverá ser. ;D
+Você pode copiar,utilizar e fazer o que bem desejar desde que tenha em mente que este é um projeto open source e assim deverá ser. ;D
