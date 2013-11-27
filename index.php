@@ -9,6 +9,7 @@ $cod = array(
 
 $locais = $Instagram->getLocation($cod);
 
+
 ?>
 
 <!DOCTYPE html>

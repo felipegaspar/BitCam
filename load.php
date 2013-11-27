@@ -9,6 +9,7 @@ $GLOBALS["config"] = array(
 );
 
 require_once("class/Info.php");
+require_once("class/Curl.php");
 require_once("class/Core.php");
 require_once("class/Instagram.php");
 require_once("function/refresh.php");

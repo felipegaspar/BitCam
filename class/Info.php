@@ -1,6 +1,5 @@
 <?php
 
-
 class Info {
 	public static function get($local){
 		if($local){
