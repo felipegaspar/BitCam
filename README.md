@@ -37,7 +37,7 @@ Próximas Atualizações
 * Efetuar algumas alterações na classe Core.
 * Exibir todas as imagens e videos próximas do local sem a necessidade de clicar num ponto.
 * Incluir a API do twitter e capturar todos os tweets próximos do local.
-* Filtrar o contéudo por um tempo determinado.
+* Filtrar o conteúdo por um tempo determinado.
 * Adicionar uma interface agradável utilizando BootStrap.
 
 Licença
