@@ -1,21 +1,21 @@
-Projeto BitCam
+BitCam Project
 =======================================
 
-Este projeto está sendo desenvolvido para mostrar os problemas relacionados a privacidade que as pessoas enfrentam ao liberar muita informação utilizando o local em que elas se encontram.
+This project has been developed to show ways to use free information to break privacy of people. (in a educational way).
 
-![Funcionamento](http://fesoft.net/bitcam/ex.png)
+![Example](http://fesoft.net/bitcam/ex.png)
 
-Como Funciona?
+How it works
 ---------------------------------------
 
-Inicialmente é necessário informar uma coordenada *(latitude/longitude)*,utilizando a API do [Instagram] (http://instagram.com/developer/) é possível capturar todos os locais que as pessoas já adicionaram utilizando o FourSquare,após a captura desses locais é possível listar as imagens e videos que foram postados no instagram a partir daquele local.
+It's necessary two informations: Latitude;Longitude. Using [Instagram] (http://instagram.com/developer/) API we are able to capture all places that people have been taking pictures or using on foursquare. After the capture you can list all the images and videos that has been posted on instagram of that places.
 
-Como Instalar
+Installing
 -----------------------------------------
 
-Antes de tudo é necessário que você tenha uma conta no instagram; depois é necessário que seja criado um Client,caso você não tenha a menor ideia da onde encontrar isso [clique Aqui e seja redirecionado.] (http://instagram.com/developer/clients/register/)
+First of all you need to have an instagram account; than its necessary that you create a Client, in case you dont have any idea on how to do this [take a look here.] (http://instagram.com/developer/clients/register/)
 
-Com o Cliente criado é necessário configurar nosso projeto com as informações que você recebeu,estas informações serão editadas no arquivo Load.php
+After your created the Client its necessary that you change the load.php file with your new informations.
 
 <pre>
 $GLOBALS["config"] = array(
@@ -26,21 +26,18 @@ $GLOBALS["config"] = array(
 );
 </pre>
 
-<dl>
-  <dt>Porque tem o parâmetro token?</dt>
-  <dd>O token é o código recebido após a autenticação. Caso você já tenha esse token guardado e não queira ficar autenticando sempre,basta colocar e utilizar a aplicação sem problemas. Ou deixe sem valor que você terá que autenticar sempre que a Sessão da aplicação expirar. *(Caso você deixe com algum token armazenado, lembre-se que o token pode expirar depois de um tempo)* </dd>
+<dt>Token Information</dt>
+  <dd>The token code is received after the autentication. If you already have this token and you don't want to be authenticating every time you open the project you can just save your token code on the project,or just leave it with nothing. (Remember that the token may expire!)   </dd>
 </dl>
 
-Próximas Atualizações
+TO-DO List
 -----------------------------------------
 
-* Efetuar algumas alterações na classe Core.
-* Exibir todas as imagens e videos próximas do local sem a necessidade de clicar num ponto.
-* Incluir a API do twitter e capturar todos os tweets próximos do local.
-* Filtrar o conteúdo por um tempo determinado.
-* Adicionar uma interface agradável utilizando BootStrap.
+* Update some code in the core class.
+* Include Twitter API to capture tweets on location
+* Use a time based filter
 
-Licença
+License
 -----------------------------------------
 
-Você pode copiar,utilizar e fazer o que bem desejar desde que tenha em mente que este é um projeto open source e assim deverá ser. ;D
+You can do whatever you want with this. I just ask you to contribute with this code if you have more ideas.
